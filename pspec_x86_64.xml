@@ -438,12 +438,12 @@
             <Path fileType="data">/opt/sabnzbd/util/__init__.py</Path>
             <Path fileType="data">/opt/sabnzbd/util/apireg.py</Path>
             <Path fileType="data">/opt/sabnzbd/util/mailslot.py</Path>
-            <Path fileType="library">/usr/lib/systemd/system/sabnzbd@.service</Path>
+            <Path fileType="library">/usr/lib64/systemd/system/sabnzbd@.service</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-08-24</Date>
+        <Update release="2">
+            <Date>2017-09-15</Date>
             <Version>2.2.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Justin Zobel</Name>

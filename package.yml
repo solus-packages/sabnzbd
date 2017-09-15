@@ -1,6 +1,6 @@
 name       : sabnzbd
 version    : 2.2.0
-release    : 1
+release    : 2
 source     :
     - https://github.com/sabnzbd/sabnzbd/archive/2.2.0.tar.gz : 5f4776d7f9e1f77b292e2b2c55eae73cdd98ad4a64c32e0f0a7f10535236df5e
 license    : GPL-2.0+
@@ -15,7 +15,5 @@ rundeps     :
 install    : |
     mkdir -p %installroot%/opt/sabnzbd
     cp -r * %installroot%/opt/sabnzbd/
+    install -D linux/sabnzbd@.service %installroot%/usr/lib64/systemd/system/sabnzbd@.service
     rm -rf %installroot%/opt/sabnzbd/win
-    mkdir -p %installroot%/usr/lib/systemd/system/
-    ln -sfv /opt/sabnzbd/linux/sabnzbd@.service %installroot%/usr/lib/systemd/system/sabnzbd@.service
-
