@@ -1,14 +1,13 @@
 name       : sabnzbd
-version    : 2.2.0
-release    : 2
+version    : 2.3.0
+release    : 3
 source     :
-    - https://github.com/sabnzbd/sabnzbd/archive/2.2.0.tar.gz : 5f4776d7f9e1f77b292e2b2c55eae73cdd98ad4a64c32e0f0a7f10535236df5e
+    - https://github.com/sabnzbd/sabnzbd/archive/2.3.0.tar.gz : 712ee40770ed35095d2c0b8169cb8176c496b58afb0ea5ebbc2ae111be9d0276
 license    : GPL-2.0+
 component  : network.download
 summary    : SABnzbd - The automated Usenet download tool
-description: |
-    SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. 
-rundeps     :
+description: SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
+rundeps    :
     - par2cmdline
     - python-cheetah
     - unrar

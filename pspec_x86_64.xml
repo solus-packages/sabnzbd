@@ -8,15 +8,13 @@
         <License>GPL-2.0+</License>
         <PartOf>network.download</PartOf>
         <Summary xml:lang="en">SABnzbd - The automated Usenet download tool</Summary>
-        <Description xml:lang="en">SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. 
-</Description>
+        <Description xml:lang="en">SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>sabnzbd</Name>
         <Summary xml:lang="en">SABnzbd - The automated Usenet download tool</Summary>
-        <Description xml:lang="en">SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction. 
-</Description>
+        <Description xml:lang="en">SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Description>
         <PartOf>network.download</PartOf>
         <Files>
             <Path fileType="data">/opt/sabnzbd/ABOUT.txt</Path>
@@ -31,6 +29,7 @@
             <Path fileType="data">/opt/sabnzbd/README.mkd</Path>
             <Path fileType="data">/opt/sabnzbd/SABHelper.py</Path>
             <Path fileType="data">/opt/sabnzbd/SABnzbd.py</Path>
+            <Path fileType="data">/opt/sabnzbd/appveyor.yml</Path>
             <Path fileType="data">/opt/sabnzbd/cherrypy/VERSION.txt</Path>
             <Path fileType="data">/opt/sabnzbd/cherrypy/__init__.py</Path>
             <Path fileType="data">/opt/sabnzbd/cherrypy/__main__.py</Path>
@@ -81,7 +80,6 @@
             <Path fileType="data">/opt/sabnzbd/cherrypy/wsgiserver/__init__.py</Path>
             <Path fileType="data">/opt/sabnzbd/cherrypy/wsgiserver/ssl_builtin.py</Path>
             <Path fileType="data">/opt/sabnzbd/cherrypy/wsgiserver/ssl_pyopenssl.py</Path>
-            <Path fileType="data">/opt/sabnzbd/cherrypy/wsgiserver/test_wsgiserver.py</Path>
             <Path fileType="data">/opt/sabnzbd/email/badfetch-en.tmpl</Path>
             <Path fileType="data">/opt/sabnzbd/email/email-en.tmpl</Path>
             <Path fileType="data">/opt/sabnzbd/email/rss-en.tmpl</Path>
@@ -133,7 +131,7 @@
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/images/logo-full.svg</Path>
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/images/logo-small.svg</Path>
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/chartist.min.js</Path>
-            <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/jquery-3.1.1.min.js</Path>
+            <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/jquery-3.2.1.min.js</Path>
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/jquery-ui.min.js</Path>
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/jquery.tablesort.min.js</Path>
             <Path fileType="data">/opt/sabnzbd/interfaces/Config/templates/staticcfg/js/script.js</Path>
@@ -396,6 +394,7 @@
             <Path fileType="data">/opt/sabnzbd/sabnzbd/nzbstuff.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/osxmenu.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/panic.py</Path>
+            <Path fileType="data">/opt/sabnzbd/sabnzbd/par2file.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/postproc.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/powersup.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/rating.py</Path>
@@ -422,7 +421,6 @@
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/rarfile.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/rsslib.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/servertests.py</Path>
-            <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/sslinfo.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/subprocess_fix.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/systrayiconthread.py</Path>
             <Path fileType="data">/opt/sabnzbd/sabnzbd/utils/upload.py</Path>
@@ -432,6 +430,13 @@
             <Path fileType="data">/opt/sabnzbd/scripts/Sample-PostProc.cmd</Path>
             <Path fileType="data">/opt/sabnzbd/scripts/Sample-PostProc.sh</Path>
             <Path fileType="data">/opt/sabnzbd/six/__init__.py</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/conftest.py</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/data/reftestnzb.nzb</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/requirements.txt</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/sabnzbd.basic.ini</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/test_api_pages.py</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/test_nzb.py</Path>
+            <Path fileType="data">/opt/sabnzbd/tests/testhelper.py</Path>
             <Path fileType="data">/opt/sabnzbd/tools/extract_pot.py</Path>
             <Path fileType="data">/opt/sabnzbd/tools/make_mo.py</Path>
             <Path fileType="data">/opt/sabnzbd/tools/msgfmt.py</Path>
@@ -442,9 +447,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2017-09-15</Date>
-            <Version>2.2.0</Version>
+        <Update release="3">
+            <Date>2017-10-15</Date>
+            <Version>2.3.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Justin Zobel</Name>
             <Email>justin@solus-project.com</Email>
